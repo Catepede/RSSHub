@@ -6,5 +6,9 @@ services:
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
-      - key: CACHE_TYPE
-        value: memory
+      - key: TWITTER_API_AUTH
+        value: "false"
+      - key: USE_TWITTER_SCRAPER
+        value: "true"
+      - key: WHITELIST
+        value: "/twitter/user/:id"
